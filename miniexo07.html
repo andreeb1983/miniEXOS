@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo : 07</title>
+    <style>
+       body {
+           background: purple;
+       }  
+       p {
+           margin: 0;
+       }
+       fieldset {
+           border: thinsolid #333;
+       }
+       #container {
+           background: lightblue;
+       }    
+       
+    </style>
+</head>
+<body>
+    <h1>Le formulaire d'inscription du club de danse</h1>    
+    <form action="miniexo07.html" method="POST">
+    <div id="container">
+    <fieldset>
+        <legend>Identité</legend>
+        <label for="nom">Nom *</label>
+        <input size="25" placeholder="nom" required>
+        <label for="prénom">Prénom *</label>
+        <input size="25" placeholder="prénom" required> 
+    </fieldset> 
+    <fieldset>
+        <legend>Votre adresse postale</legend>
+        <label for="adresse">Adresse</label>
+        <input size="40" placeholder="adresse">
+        <label for="code_postal">Code postal</label>
+        <input size="25" placeholder="code postal">
+        <label for="ville">Ville</label>
+        <input size="25" placeholder="ville"> 
+    </fieldset> 
+    <fieldset> 
+    <legend> Votre email</legend>
+    <label for="email">Adresse email *</label>
+    <input type="email" name="email" size="30px" placeholder="email" required>
+    </fieldset>
+    <fieldset>
+        <legend>Sexe</legend>        
+        <input type="radio" name="X" value="Femme" checked>
+        <label for="sexe" class="inline">Femme</label>
+        <input type="radio" name="X" value="Homme">
+        <label for="sexe" class="inline">Homme</label> 
+    </fieldset>        
+    <fieldset>
+        <legend> Avez-vous du matériel?</legend>
+        <input type="checkbox" name="matos" value="chaussures" checked>
+        <label for="matos" class="inline">j'ai des chaussures</label>
+        <input type="checkbox" name="matos" value="bodies">
+        <label for="matos" class="inline">j'ai des bodies</label> 
+        <input type="checkbox" name="matos" value="non">
+        <label for="matos" class="inline">je n'ai rien</label> 
+    </fieldset>
+    <fieldset>
+        <legend>Faites vous de la danse ?</legend>
+        <label for="danse">Danse</label>
+        <select name="usage">
+            <option value="0">choississez votre niveau en danse</option>
+            <option value="jamais">jamais</option>
+            <option value="jenaifait">il y a longtemps</option>
+            <option value="parfois">parfois</option>
+            <option value="toujours">tous les jours</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Votre commentaire</legend>
+        <label for="message">Votre message</label>
+        <textarea name="message" cols="100" rows="20">Dites-nous un peu plus si vous le souhaitez...</textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Inscrivez-vous en envoyant ce formulaire:</legend>
+        <input type="submit" value="Inscrivez-vous" > 
+        <input type="reset"  value="Effacer">
+        <small>* obligatoire</small>
+    </fieldset>
+    </div>
+    </form>   
+</body>
+</html>
