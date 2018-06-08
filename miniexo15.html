@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Mini exo : 15</title>
+   <style>
+       /* couleurs */
+       .vert {
+           background:lightgreen;
+       }
+       .orange {
+           background: orangered;
+       }
+       .bleu {
+           background: lightskyblue;
+           border: 2px solid blue;
+       }
+       
+       .centre_padding {
+           padding: 70px 0;
+           /* text-align: center; */
+       }
+       /* .centre_lineheight {
+           height: 300px;
+           line-height: 300px;
+       } */
+       /* si il y a plusieurs lignes, ajoutons le code suivant */
+       .centre p {
+           line-height: 1.5;
+           display: inline-block;
+           vertical-align: middle;
+       }
+       
+              
+   </style>
+</head>
+<body>
+   <h2>Centré verticalement en utilisant <code>padding</code></h2>
+   <div class="centre_padding bleu">
+       <p>je suis centré verticalement</p>
+    </div>
+    <hr>
+<!-- utilisation de line-height avec une valeur égale à la hauteur du bloc -->
+    <h2>Centré verticalement en utilisant <code>line-height</code></h2>
+   <div class="centre_lineheight orange">
+       <p>je suis centré verticalement</p>
+    </div>
+    <hr>
+
+    <h2>Et si il y a plusieurs éléments ?</h2>
+    <div class="centre vert">
+            <p>1 je suis centré verticalement et j'ai plusieurs éléments</p>
+            <p>2 Lorem ips dolorem omnis inventore a facere, repudiandae rem odit. Obcaecati alias nihil fuga nemo nostrum.</p>
+            <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam fugit iste sunt reiciendis, pariatur excepturi quo repellendus commodi voluptate cum modi doloremque porro rerum, error vero delectus? Vel, impedit.</p>            
+         </div>
+</body>
+</html>

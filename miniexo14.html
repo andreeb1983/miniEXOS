@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Mini exo : 14</title>
+   <style>
+       /* couleurs */
+       .vert {
+           background:green;
+       }
+       .orange {
+           background: orangered;
+       }
+       .bleu {
+           background: lightskyblue;
+           border: 2px solid blue;
+       }
+       
+       .image1 { 
+           float: right;
+       }
+
+       .image2 {
+           float: right;
+       }
+
+       .clearfix {
+           overflow: auto;
+       }
+       .clearright {
+           clear: right;
+       }
+       
+   </style>
+</head>
+<body>
+   <h2>Dans cette exemple l'image est plus grande que l'élément qui la contient, et elle flotte donc elle sort du bloc </h2>
+   <div class="bleu">
+       <!-- l'image est dans la div mais elle est plus  et donne l'impression de sortir de la div -->
+       <img src="img/montagne.jpg" alt="montagne" class="image1">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia minus impedit repellendus quis! Amet blanditiis veniam temporibus sed architecto dolorum reiciendis est, culpa voluptatum totam odit assumenda dolores nesciunt nam! l
+   </div>
+
+        <p class="clearright">On ajoute une class clearfix avec overflow: auto à l'élément pour régler le problème</p>
+  
+    <div class="orange clearfix">
+        <img src="img/montagne.jpg" alt="montagne" class="image2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia minus impedit repellendus quis! Amet blanditiis veniam temporibus sed architecto dolorum reiciendis est, culpa voluptatum totam odit assumenda dolores nesciunt nam! l
+        </div>
+    </div>
+</body>
+</html>
